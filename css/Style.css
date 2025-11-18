@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #2c2416 0%, #4a3f2e 100%);
+    font-family: 'Courier Prime', monospace;
+    color: #1a1a1a;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.paper {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #e8dcc4;
+    padding: 60px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    position: relative;
+    border: 2px solid #8b7355;
+}
+
+.paper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 29px,
+            rgba(139, 115, 85, 0.1) 29px,
+            rgba(139, 115, 85, 0.1) 30px
+        );
+    pointer-events: none;
+}
+
+.stamp {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #8b0000;
+    border-radius: 50%;
+    transform: rotate(15deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    color: #8b0000;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 3px double #1a1a1a;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.classification {
+    background: #8b0000;
+    color: #fff;
+    padding: 8px 20px;
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    border: 2px solid #1a1a1a;
+}
+
+.title {
+    font-family: 'Special Elite', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.date {
+    font-size: 14px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    line-height: 1.8;
+}
+
+.section {
+    margin: 25px 0;
+}
+
+.section-title {
+    font-family: 'Special Elite', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 5px;
+}
+
+.paragraph {
+    text-align: justify;
+    margin-bottom: 15px;
+    text-indent: 40px;
+}
+
+.signature-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.signature-box {
+    text-align: center;
+}
+
+.signature-line {
+    border-top: 2px solid #1a1a1a;
+    width: 200px;
+    margin: 40px auto 10px;
+}
+
+.signature-label {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.corner-mark {
+    position: absolute;
+    font-size: 10px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.corner-mark.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.corner-mark.bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
